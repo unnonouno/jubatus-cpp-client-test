@@ -1,0 +1,7 @@
+def build(bld):
+    bld.program(
+        features='gtest',
+        source=['anomaly_client_test.cpp', 'test_util.cpp'],
+        target='anomaly_client_test',
+        use='JUBATUS-CLIENT'
+        )
